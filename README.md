@@ -27,5 +27,15 @@ This is a complete Loot Box smart contract system built on Sui Move.
 - Deploy on Sui Testnet/Mainnet `sui move build`
 
 ## Instructions
-1. Run `sui move test` to verify the logic and the mock randomness flow for the pity system.
-2. The logic simulates user purchases and fully emulates randomness safely on-chain.
+
+### 1. Smart Contract
+1. Install the [Sui CLI](https://docs.sui.io/guides/developer/getting-started/sui-install).
+2. Run `sui move test` in the `d:\Hackathon\sui_loot_box` directory to verify the logic and the mock randomness flow for the pity system.
+3. To deploy to testnet, run `sui client publish --gas-budget 100000000`.
+
+### 2. Frontend Web UI (3D)
+1. Navigate to the frontend directory: `cd frontend`
+2. Install the necessary Node.js dependencies: `npm install`
+3. Start the local Vite development server: `npm run dev`
+4. Open the `localhost` URL provided in the terminal (usually `http://localhost:5173`) in your web browser. 
+5. The UI features a beautiful 3D background powered by React Three Fiber! You can click "Buy Box" and "Open Loot Box" to view the animated unboxing experience and the Pity Counter logic.
